@@ -20,7 +20,7 @@ public class DomainCrawlerService {
 
     Mono<DomainList> domainListMono = WebClient.create()
         .get()
-        .uri("https://api.domainsdb.info/v1/domains/search?domain=" + name + "&zone=com")
+        .uri( "http://localhost:8083/v1/domains/search?domain=" + name)
         .accept(MediaType.APPLICATION_JSON)
         .retrieve()
         .bodyToMono(DomainList.class);
