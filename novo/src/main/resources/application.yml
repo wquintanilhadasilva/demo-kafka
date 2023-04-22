@@ -1,0 +1,22 @@
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: processar-arquivo
+#  cloud:
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: localhost:9092
+#          auto-create-topics: true
+#          configuration:
+#            retention.ms: 3600000
+#            compression.type: snappy
+#      bindings:
+#        input:
+#          destination: myTopic
+#          content-type: application/json
+#        output:
+#          destination: myTopic
+#          content-type: application/json
